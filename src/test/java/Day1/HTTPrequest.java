@@ -39,7 +39,7 @@ public class HTTPrequest {
 
     @Test(priority = 2)
     void createUser() {
-        HashMap<String, String> data = new HashMap<>();
+        HashMap data = new HashMap<>();
         data.put("name", "pavan");
         data.put("job", "trainer");
 
@@ -59,7 +59,7 @@ public class HTTPrequest {
     void updateUser()
     {
         HashMap data = new HashMap<>();
-        data.put("name","pavan");
+        data.put("name","pavan1");
         data.put("job","trainer1");
 
         given()
