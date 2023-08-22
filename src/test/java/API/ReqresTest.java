@@ -1,7 +1,5 @@
 package API;
 
-// import io.restassured.http.ContentType;
-
 import org.junit.Assert;
 import org.testng.annotations.Test;
 
@@ -15,7 +13,7 @@ import static io.restassured.RestAssured.given;
 public class ReqresTest {
     private final static String URL = "https://reqres.in";
 
-    @Test(priority = 1)
+    @Test(priority = 1)  // проверка почты и аватара
     public void CheckAvatarAndIdTest() {
 
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecOK200());
@@ -44,21 +42,27 @@ public class ReqresTest {
 
     }
 
-    @Test(priority = 2)
+    @Test(priority = 2) // Тест успешной регистрации
     public void successRegTest() {
+        // Установка спецификаций запроса и ответа
         Specifications.installSpecification(Specifications.requestSpec(URL), Specifications.responseSpecOK200());
+
+        // Подготовка данных для запроса
         Integer id = 4;
         String token = "QpwL5tke4Pnpja7X4";
         Register user = new Register("eve.holt@reqres.in", "pistol");
+
+        // Отправка запроса на регистрацию пользователя и получение ответа
         SuccessReg successReg = given()
                 .body(user)
                 .when()
                 .post("/api/register")
-                .then().log().all()
+                .then().log().all() // Логирование всего ответа
                 .extract().as(SuccessReg.class);
+
+        // Проверка соответствия ID и токена в ответе ожидаемым значениям
         Assert.assertEquals(id, successReg.getId());
         Assert.assertEquals(token, successReg.getToken());
-
     }
 
     @Test(priority = 3)  // проверяем, что нет заполненного пароля и получаем code 400
