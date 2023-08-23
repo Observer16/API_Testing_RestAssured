@@ -14,7 +14,7 @@ import static io.restassured.RestAssured.given;
 public class PostToken {
     public static String authToken;
 
-    @Test // Получение гостевого токена
+    @Test  (priority=1) // Получение гостевого токена
     public void GetAGuestToken(){
         API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(204));
         String platform = "Android 12";
@@ -46,7 +46,7 @@ public class PostToken {
         }
     }
 
-    @Test // Проваленный тест Получение гостевого токена
+    @Test  (priority=2,dependsOnMethods = {"GetAGuestToken"}) // Проваленный тест Получение гостевого токена
     public void FailedGetAGuestToken(){
         API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(401));
         // String platform = "Android 12";

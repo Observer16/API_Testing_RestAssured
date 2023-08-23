@@ -1,4 +1,4 @@
-package Evolution.pojos.catalog;
+package Evolution.pojos.products;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class CatalogRoot {
-    private CatalogData data;
+public class ProductsRoot {
+    private ProductsData data;
 }
