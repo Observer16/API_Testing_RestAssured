@@ -1,0 +1,2206 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "products": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "article": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "images": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    }
+                  ]
+                },
+                "price": {
+                  "type": "object",
+                  "properties": {
+                    "main": {
+                      "type": "object",
+                      "properties": {
+                        "price": {
+                          "type": "integer"
+                        },
+                        "basePrice": {
+                          "type": "null"
+                        },
+                        "currency": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "price",
+                        "basePrice",
+                        "currency",
+                        "unit"
+                      ]
+                    },
+                    "additional": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "accounting": {
+                      "type": "object",
+                      "properties": {
+                        "price": {
+                          "type": "integer"
+                        },
+                        "basePrice": {
+                          "type": "null"
+                        },
+                        "currency": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "price",
+                        "basePrice",
+                        "currency",
+                        "unit"
+                      ]
+                    },
+                    "bonus": {
+                      "type": "integer"
+                    },
+                    "extraBonus": {
+                      "type": "null"
+                    }
+                  },
+                  "required": [
+                    "main",
+                    "additional",
+                    "accounting",
+                    "bonus",
+                    "extraBonus"
+                  ]
+                },
+                "availabilities": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "store": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "address": {
+                              "type": "string"
+                            },
+                            "storeType": {
+                              "type": "string"
+                            },
+                            "latitude": {
+                              "type": "string"
+                            },
+                            "longitude": {
+                              "type": "string"
+                            },
+                            "workingHours": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "from": {
+                                  "type": "string"
+                                },
+                                "to": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "title",
+                                "from",
+                                "to"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "title",
+                            "address",
+                            "storeType",
+                            "latitude",
+                            "longitude",
+                            "workingHours"
+                          ]
+                        },
+                        "planDate": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "availText": {
+                          "type": "string"
+                        },
+                        "extra": {
+                          "type": "string"
+                        },
+                        "placements": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "store",
+                        "planDate",
+                        "amount",
+                        "unit",
+                        "availText",
+                        "extra",
+                        "placements"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "store": {
+                          "type": "object",
+                          "properties": {
+                            "id": {
+                              "type": "integer"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "address": {
+                              "type": "string"
+                            },
+                            "storeType": {
+                              "type": "string"
+                            },
+                            "latitude": {
+                              "type": "string"
+                            },
+                            "longitude": {
+                              "type": "string"
+                            },
+                            "workingHours": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "from": {
+                                  "type": "string"
+                                },
+                                "to": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "title",
+                                "from",
+                                "to"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "id",
+                            "title",
+                            "address",
+                            "storeType",
+                            "latitude",
+                            "longitude",
+                            "workingHours"
+                          ]
+                        },
+                        "planDate": {
+                          "type": "string"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "availText": {
+                          "type": "string"
+                        },
+                        "extra": {
+                          "type": "string"
+                        },
+                        "placements": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "string"
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "store",
+                        "planDate",
+                        "amount",
+                        "unit",
+                        "availText",
+                        "extra",
+                        "placements"
+                      ]
+                    }
+                  ]
+                },
+                "availability": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "availabilityCount": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "text"
+                          ]
+                        },
+                        "stores": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "store": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "integer"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "address": {
+                                      "type": "string"
+                                    },
+                                    "storeType": {
+                                      "type": "string"
+                                    },
+                                    "latitude": {
+                                      "type": "string"
+                                    },
+                                    "longitude": {
+                                      "type": "string"
+                                    },
+                                    "workingHours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "title": {
+                                          "type": "string"
+                                        },
+                                        "from": {
+                                          "type": "string"
+                                        },
+                                        "to": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "title",
+                                        "from",
+                                        "to"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "title",
+                                    "address",
+                                    "storeType",
+                                    "latitude",
+                                    "longitude",
+                                    "workingHours"
+                                  ]
+                                },
+                                "planDate": {
+                                  "type": "string"
+                                },
+                                "amount": {
+                                  "type": "integer"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "availText": {
+                                  "type": "string"
+                                },
+                                "extra": {
+                                  "type": "string"
+                                },
+                                "placements": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "string"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "store",
+                                "planDate",
+                                "amount",
+                                "unit",
+                                "availText",
+                                "extra",
+                                "placements"
+                              ]
+                            },
+                            {
+                              "type": "object",
+                              "properties": {
+                                "store": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "integer"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "address": {
+                                      "type": "string"
+                                    },
+                                    "storeType": {
+                                      "type": "string"
+                                    },
+                                    "latitude": {
+                                      "type": "string"
+                                    },
+                                    "longitude": {
+                                      "type": "string"
+                                    },
+                                    "workingHours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "title": {
+                                          "type": "string"
+                                        },
+                                        "from": {
+                                          "type": "string"
+                                        },
+                                        "to": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "title",
+                                        "from",
+                                        "to"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "title",
+                                    "address",
+                                    "storeType",
+                                    "latitude",
+                                    "longitude",
+                                    "workingHours"
+                                  ]
+                                },
+                                "planDate": {
+                                  "type": "string"
+                                },
+                                "amount": {
+                                  "type": "integer"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "availText": {
+                                  "type": "string"
+                                },
+                                "extra": {
+                                  "type": "string"
+                                },
+                                "placements": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "string"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "store",
+                                "planDate",
+                                "amount",
+                                "unit",
+                                "availText",
+                                "extra",
+                                "placements"
+                              ]
+                            }
+                          ]
+                        },
+                        "availabilityDate": {
+                          "type": "null"
+                        },
+                        "hint": {
+                          "type": "null"
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "type",
+                        "availabilityCount",
+                        "stores",
+                        "availabilityDate",
+                        "hint"
+                      ]
+                    }
+                  ]
+                },
+                "availableType": {
+                  "type": "string"
+                },
+                "sectionId": {
+                  "type": "integer"
+                },
+                "inBasket": {
+                  "type": "integer"
+                },
+                "inWishList": {
+                  "type": "integer"
+                },
+                "quantityInWishLists": {
+                  "type": "array",
+                  "items": {}
+                },
+                "multiple": {
+                  "type": "integer"
+                },
+                "is24": {
+                  "type": "boolean"
+                },
+                "isNoticeReceiptExist": {
+                  "type": "boolean"
+                },
+                "nameplates": {
+                  "type": "array",
+                  "items": {}
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "article",
+                "rating",
+                "images",
+                "price",
+                "availabilities",
+                "availability",
+                "availableType",
+                "sectionId",
+                "inBasket",
+                "inWishList",
+                "quantityInWishLists",
+                "multiple",
+                "is24",
+                "isNoticeReceiptExist",
+                "nameplates"
+              ]
+            }
+          ]
+        },
+        "stores": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "isApplied"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "isApplied"
+              ]
+            }
+          ]
+        },
+        "filters": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "minId": {
+                  "type": "string"
+                },
+                "maxId": {
+                  "type": "string"
+                },
+                "minRange": {
+                  "type": "integer"
+                },
+                "maxRange": {
+                  "type": "integer"
+                },
+                "minValue": {
+                  "type": "integer"
+                },
+                "maxValue": {
+                  "type": "integer"
+                },
+                "step": {
+                  "type": "integer"
+                },
+                "unit": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "minId",
+                "maxId",
+                "minRange",
+                "maxRange",
+                "minValue",
+                "maxValue",
+                "step",
+                "unit"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "variants": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "disabled": {
+                          "type": "boolean"
+                        },
+                        "checked": {
+                          "type": "boolean"
+                        },
+                        "amount": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "title",
+                        "disabled",
+                        "checked",
+                        "amount"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "variants"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "type": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "isMultiple": {
+                  "type": "boolean"
+                },
+                "hint": {
+                  "type": "string"
+                },
+                "minId": {
+                  "type": "string"
+                },
+                "maxId": {
+                  "type": "string"
+                },
+                "minRange": {
+                  "type": "integer"
+                },
+                "maxRange": {
+                  "type": "integer"
+                },
+                "minValue": {
+                  "type": "integer"
+                },
+                "maxValue": {
+                  "type": "integer"
+                },
+                "step": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "id",
+                "type",
+                "title",
+                "isMultiple",
+                "hint",
+                "minId",
+                "maxId",
+                "minRange",
+                "maxRange",
+                "minValue",
+                "maxValue",
+                "step"
+              ]
+            }
+          ]
+        },
+        "tags": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "code": {
+                  "type": "string"
+                },
+                "amount": {
+                  "type": "integer"
+                },
+                "filters": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "value": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "value"
+                      ]
+                    }
+                  ]
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "code",
+                "amount",
+                "filters"
+              ]
+            }
+          ]
+        },
+        "sorts": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "param": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "param",
+                "title",
+                "comment",
+                "isApplied"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "param": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "param",
+                "title",
+                "comment",
+                "isApplied"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "param": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "param",
+                "title",
+                "comment",
+                "isApplied"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "param": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "comment": {
+                  "type": "string"
+                },
+                "isApplied": {
+                  "type": "boolean"
+                }
+              },
+              "required": [
+                "param",
+                "title",
+                "comment",
+                "isApplied"
+              ]
+            }
+          ]
+        },
+        "nav": {
+          "type": "object",
+          "properties": {
+            "pageNomer": {
+              "type": "integer"
+            },
+            "pageSize": {
+              "type": "integer"
+            },
+            "recordCount": {
+              "type": "integer"
+            }
+          },
+          "required": [
+            "pageNomer",
+            "pageSize",
+            "recordCount"
+          ]
+        },
+        "seo": {
+          "type": ["object", "null"]
+        }
+      },
+      "required": [
+        "products",
+        "stores",
+        "filters",
+        "tags",
+        "sorts",
+        "nav",
+        "seo"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

@@ -1,0 +1,213 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "locations": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "name": {
+                  "type": "string"
+                },
+                "latitude": {
+                  "type": "string"
+                },
+                "longitude": {
+                  "type": "string"
+                },
+                "stores": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "address": {
+                          "type": "string"
+                        },
+                        "latitude": {
+                          "type": "string"
+                        },
+                        "longitude": {
+                          "type": "string"
+                        },
+                        "workingHours": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "from": {
+                              "type": "string"
+                            },
+                            "to": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "from",
+                            "to"
+                          ]
+                        },
+                        "phones": {
+                          "type": "object",
+                          "properties": {
+                            "online": {
+                              "type": "string"
+                            },
+                            "store": {
+                              "type": "string"
+                            },
+                            "profi": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "online",
+                            "store",
+                            "profi"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "title",
+                        "address",
+                        "latitude",
+                        "longitude",
+                        "workingHours",
+                        "phones"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "id": {
+                          "type": "integer"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "address": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "latitude": {
+                          "type": "string"
+                        },
+                        "longitude": {
+                          "type": "string"
+                        },
+                        "workingHours": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "from": {
+                              "type": "string"
+                            },
+                            "to": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "from",
+                            "to"
+                          ]
+                        },
+                        "phones": {
+                          "type": "object",
+                          "properties": {
+                            "online": {
+                              "type": "string"
+                            },
+                            "profi": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "online",
+                            "profi"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "id",
+                        "name",
+                        "address",
+                        "title",
+                        "latitude",
+                        "longitude",
+                        "workingHours",
+                        "phones"
+                      ]
+                    }
+                  ]
+                },
+                "orderEmail": {
+                  "type": "object",
+                  "properties": {
+                    "online": {
+                      "type": "string"
+                    },
+                    "profi": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "online",
+                    "profi"
+                  ]
+                },
+                "telegram": {
+                  "type": "string"
+                },
+                "viber": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "name",
+                "latitude",
+                "longitude",
+                "stores",
+                "orderEmail",
+                "telegram",
+                "viber"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "locations"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

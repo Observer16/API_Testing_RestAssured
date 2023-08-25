@@ -1,0 +1,684 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "data": {
+      "type": "object",
+      "properties": {
+        "viewedProducts": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "integer"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "article": {
+                  "type": "string"
+                },
+                "rating": {
+                  "type": "number"
+                },
+                "images": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "path": {
+                          "type": "string"
+                        },
+                        "alternative": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "path",
+                        "alternative"
+                      ]
+                    }
+                  ]
+                },
+                "price": {
+                  "type": "object",
+                  "properties": {
+                    "main": {
+                      "type": "object",
+                      "properties": {
+                        "price": {
+                          "type": "integer"
+                        },
+                        "currency": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "basePrice": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "price",
+                        "currency",
+                        "unit",
+                        "basePrice"
+                      ]
+                    },
+                    "additional": {
+                      "type": "array",
+                      "items": [
+                        {
+                          "type": "object",
+                          "properties": {
+                            "price": {
+                              "type": "integer"
+                            },
+                            "currency": {
+                              "type": "string"
+                            },
+                            "unit": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "price",
+                            "currency",
+                            "unit"
+                          ]
+                        }
+                      ]
+                    },
+                    "accounting": {
+                      "type": "object",
+                      "properties": {
+                        "price": {
+                          "type": "integer"
+                        },
+                        "currency": {
+                          "type": "string"
+                        },
+                        "unit": {
+                          "type": "string"
+                        },
+                        "basePrice": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "price",
+                        "currency",
+                        "unit",
+                        "basePrice"
+                      ]
+                    },
+                    "bonus": {
+                      "type": "integer"
+                    },
+                    "extraBonus": {
+                      "type": "integer"
+                    }
+                  },
+                  "required": [
+                    "main",
+                    "additional",
+                    "accounting",
+                    "bonus",
+                    "extraBonus"
+                  ]
+                },
+                "availability": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "availabilityCount": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "text"
+                          ]
+                        },
+                        "prompt": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "text"
+                          ]
+                        },
+                        "stores": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "store": {
+                                  "type": "object",
+                                  "properties": {
+                                    "id": {
+                                      "type": "integer"
+                                    },
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "address": {
+                                      "type": "string"
+                                    },
+                                    "storeType": {
+                                      "type": "string"
+                                    },
+                                    "latitude": {
+                                      "type": "string"
+                                    },
+                                    "longitude": {
+                                      "type": "string"
+                                    },
+                                    "workingHours": {
+                                      "type": "object",
+                                      "properties": {
+                                        "title": {
+                                          "type": "string"
+                                        },
+                                        "from": {
+                                          "type": "string"
+                                        },
+                                        "to": {
+                                          "type": "string"
+                                        }
+                                      },
+                                      "required": [
+                                        "title",
+                                        "from",
+                                        "to"
+                                      ]
+                                    }
+                                  },
+                                  "required": [
+                                    "id",
+                                    "title",
+                                    "address",
+                                    "storeType",
+                                    "latitude",
+                                    "longitude",
+                                    "workingHours"
+                                  ]
+                                },
+                                "planDate": {
+                                  "type": "string"
+                                },
+                                "planDateText": {
+                                  "type": "string"
+                                },
+                                "amount": {
+                                  "type": "number"
+                                },
+                                "unit": {
+                                  "type": "string"
+                                },
+                                "availText": {
+                                  "type": "string"
+                                },
+                                "extra": {
+                                  "type": "string"
+                                },
+                                "placements": {
+                                  "type": "array",
+                                  "items": [
+                                    {
+                                      "type": "string"
+                                    }
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "store",
+                                "planDate",
+                                "planDateText",
+                                "amount",
+                                "unit",
+                                "availText",
+                                "extra",
+                                "placements"
+                              ]
+                            }
+                          ]
+                        },
+                        "availabilityDate": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "planDate": {
+                              "type": "string"
+                            },
+                            "planDateText": {
+                              "type": "string"
+                            },
+                            "prompt": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "title",
+                                "text"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "planDate",
+                            "planDateText",
+                            "prompt"
+                          ]
+                        },
+                        "hint": {
+                          "type": "string"
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "type",
+                        "availabilityCount",
+                        "prompt",
+                        "stores",
+                        "availabilityDate",
+                        "hint"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "availabilityCount": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "text"
+                          ]
+                        },
+                        "prompt": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "text"
+                          ]
+                        },
+                        "availabilityDate": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "planDate": {
+                              "type": "string"
+                            },
+                            "planDateText": {
+                              "type": "string"
+                            },
+                            "prompt": {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                },
+                                "text": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "title",
+                                "text"
+                              ]
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "planDate",
+                            "planDateText",
+                            "prompt"
+                          ]
+                        },
+                        "pickups": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "id": {
+                                  "type": "integer"
+                                },
+                                "title": {
+                                  "type": "string"
+                                },
+                                "date": {
+                                  "type": "string"
+                                },
+                                "dateText": {
+                                  "type": "string"
+                                },
+                                "address": {
+                                  "type": "string"
+                                },
+                                "latitude": {
+                                  "type": "string"
+                                },
+                                "longitude": {
+                                  "type": "string"
+                                },
+                                "workingHours": {
+                                  "type": "object",
+                                  "properties": {
+                                    "title": {
+                                      "type": "string"
+                                    },
+                                    "from": {
+                                      "type": "string"
+                                    },
+                                    "to": {
+                                      "type": "string"
+                                    }
+                                  },
+                                  "required": [
+                                    "title",
+                                    "from",
+                                    "to"
+                                  ]
+                                }
+                              },
+                              "required": [
+                                "id",
+                                "title",
+                                "date",
+                                "dateText",
+                                "address",
+                                "latitude",
+                                "longitude",
+                                "workingHours"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "type",
+                        "availabilityCount",
+                        "prompt",
+                        "availabilityDate",
+                        "pickups"
+                      ]
+                    },
+                    {
+                      "type": "object",
+                      "properties": {
+                        "title": {
+                          "type": "string"
+                        },
+                        "type": {
+                          "type": "string"
+                        },
+                        "availabilityCount": {
+                          "type": "object",
+                          "properties": {
+                            "amount": {
+                              "type": "integer"
+                            },
+                            "unit": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "amount",
+                            "unit",
+                            "text"
+                          ]
+                        },
+                        "prompt": {
+                          "type": "object",
+                          "properties": {
+                            "title": {
+                              "type": "string"
+                            },
+                            "text": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "title",
+                            "text"
+                          ]
+                        },
+                        "delivery": {
+                          "type": "array",
+                          "items": [
+                            {
+                              "type": "object",
+                              "properties": {
+                                "title": {
+                                  "type": "string"
+                                }
+                              },
+                              "required": [
+                                "title"
+                              ]
+                            }
+                          ]
+                        }
+                      },
+                      "required": [
+                        "title",
+                        "type",
+                        "availabilityCount",
+                        "prompt",
+                        "delivery"
+                      ]
+                    }
+                  ]
+                },
+                "availableType": {
+                  "type": "string"
+                },
+                "sectionId": {
+                  "type": "integer"
+                },
+                "inBasket": {
+                  "type": "number"
+                },
+                "quantityInWishLists": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "wishListId": {
+                          "type": "integer"
+                        },
+                        "quantity": {
+                          "type": "integer"
+                        }
+                      },
+                      "required": [
+                        "wishListId",
+                        "quantity"
+                      ]
+                    }
+                  ]
+                },
+                "multiple": {
+                  "type": "integer"
+                },
+                "is24": {
+                  "type": "boolean"
+                },
+                "isNoticeReceiptExist": {
+                  "type": "boolean"
+                },
+                "nameplates": {
+                  "type": "array",
+                  "items": [
+                    {
+                      "type": "object",
+                      "properties": {
+                        "type": {
+                          "type": "string"
+                        },
+                        "title": {
+                          "type": "string"
+                        },
+                        "id": {
+                          "type": "integer"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "bgColor": {
+                          "type": "string"
+                        },
+                        "textColor": {
+                          "type": "string"
+                        },
+                        "icon": {
+                          "type": "object",
+                          "properties": {
+                            "type": {
+                              "type": "string"
+                            },
+                            "title": {
+                              "type": "string"
+                            },
+                            "path": {
+                              "type": "string"
+                            },
+                            "alternative": {
+                              "type": "string"
+                            }
+                          },
+                          "required": [
+                            "type",
+                            "title",
+                            "path",
+                            "alternative"
+                          ]
+                        }
+                      },
+                      "required": [
+                        "type",
+                        "title",
+                        "id",
+                        "url",
+                        "bgColor",
+                        "textColor",
+                        "icon"
+                      ]
+                    }
+                  ]
+                },
+                "code": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id",
+                "title",
+                "article",
+                "rating",
+                "images",
+                "price",
+                "availability",
+                "availableType",
+                "sectionId",
+                "inBasket",
+                "quantityInWishLists",
+                "multiple",
+                "is24",
+                "isNoticeReceiptExist",
+                "nameplates",
+                "code"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "viewedProducts"
+      ]
+    }
+  },
+  "required": [
+    "data"
+  ]
+}

@@ -1,8 +1,10 @@
 package Evolution.catalog;
 
 import API.Specifications;
-import Evolution.service.Constants;
-import Evolution.service.TokenManager;
+import Evolution.utils.service.Constants;
+import Evolution.utils.service.TokenManager;
+import Evolution.utils.HeaderUtils;
+import io.restassured.http.Headers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.BeforeMethod;
@@ -24,13 +26,15 @@ public class GetViewedProducts {
     public void Get_Viewed_Products() {
 
         API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
+        // Создание заголовков с использованием HeaderUtils
+        Headers headers = HeaderUtils.createHeaders(authToken);
+
         ValidatableResponse response = given()
-                    .header("X-Auth-Token", authToken) // Добавляем токен в заголовок
-                    .header("accept", "application/json")
+                .headers(headers)
                 .when()
                     .get("/viewed-products")
                 .then().log().all().assertThat()
-                .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/schemas/viewedproducts-response-schema.json")));
+                    .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/schemas/viewedproducts-schema.json")));
 
     }
 }

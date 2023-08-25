@@ -10,10 +10,9 @@ then()
     validate status code, extract response, extract headers cookies & response body
 */
 
-import models.Student;
-import org.json.JSONObject;
+import Day2.models.Student;
 import org.testng.annotations.Test;
-import static io.restassured.matcher.RestAssuredMatchers.*;
+
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 

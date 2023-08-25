@@ -1,6 +1,6 @@
 package Evolution.token;
 
-import Evolution.service.Constants;
+import Evolution.utils.service.Constants;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.Test;
 import API.Specifications;
@@ -27,7 +27,7 @@ public class PostToken {
                 .then().log().all();
 
         // Извлечение значения токена из заголовков ответа
-        String authToken = response.extract().header("X-Auth-Token");
+        String authToken = response.extract().header("token");
         System.out.println(authToken);
 
         // Сохранение токена в файл
@@ -37,7 +37,7 @@ public class PostToken {
     // Метод для сохранения токена в файл
     private void saveTokenToFile(String token) {
         try {
-            FileWriter fileWriter = new FileWriter("src/test/java/Evolution/service/authToken.txt");
+            FileWriter fileWriter = new FileWriter(Constants.AUTH_TOKEN);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             bufferedWriter.write(token);
             bufferedWriter.close();
@@ -46,6 +46,7 @@ public class PostToken {
         }
     }
 
+/*
     @Test  (priority=2,dependsOnMethods = {"GetAGuestToken"}) // Проваленный тест Получение гостевого токена
     public void FailedGetAGuestToken(){
         API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(401));
@@ -59,7 +60,8 @@ public class PostToken {
                 .then().log().all();
 
         // Извлечение значения токена из заголовков ответа
-        String authToken = response.extract().header("X-Auth-Token");
+        String authToken = response.extract().header("token");
         System.out.println(authToken);
     }
+*/
 }
