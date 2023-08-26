@@ -1,4 +1,4 @@
-package Evolution.utils.pojos.products;
+package Evolution.utils.pojos.locations;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,7 +8,6 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class ProductsBase {
-    private Integer price;
-    private String currency;
+public class LocationRoot {
+    private LocationData data;
 }

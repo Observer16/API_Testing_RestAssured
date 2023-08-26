@@ -1,4 +1,4 @@
-package Evolution.utils.pojos.products;
+package Evolution.utils.pojos.locations;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,6 +8,7 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 
-public class ProductsRoot {
-    private ProductsData data;
+public class LocationOrderEmail {
+    private String online;
+    private String profi;
 }

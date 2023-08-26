@@ -37,4 +37,5 @@ public class GetViewedProducts {
                     .body(JsonSchemaValidator.matchesJsonSchema(new File("src/test/resources/schemas/viewedproducts-schema.json")));
 
     }
+
 }

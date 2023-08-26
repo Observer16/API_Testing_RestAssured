@@ -56,7 +56,6 @@ public class GetCategories {
                 .extract().response();
 
         CatalogRoot catalogResponse = response.as(CatalogRoot.class);
-
         List<CatalogCategory> categories = catalogResponse.getData().getCategories();
         Assert.assertTrue(categories.stream().allMatch(x -> x.getMedia().getPath().endsWith(".jpg")));
     }
