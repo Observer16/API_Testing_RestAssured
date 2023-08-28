@@ -1,9 +1,10 @@
 package Evolution.token;
 
+import Evolution.utils.service.Specifications;
 import Evolution.utils.service.Constants;
+import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.Test;
-import API.Specifications;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;
@@ -16,7 +17,7 @@ public class PostToken {
 
     @Test  (priority=1) // Получение гостевого токена
     public void GetAGuestToken(){
-        API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(204));
+        Specifications.installSpecification(Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(204));
         String platform = "Android 12";
         String version = "2.1.0";
         String build = "Build/SP1A.210812.016";

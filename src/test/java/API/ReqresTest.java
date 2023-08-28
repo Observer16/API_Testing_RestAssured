@@ -1,13 +1,11 @@
 package API;
 
-import org.junit.Assert;
 import org.testng.annotations.Test;
-
 import java.time.Clock;
 import java.time.Instant;
 import java.util.List;
 import java.util.stream.Collectors;
-
+import org.testng.Assert;
 import static io.restassured.RestAssured.given;
 
 public class ReqresTest {
@@ -150,6 +148,5 @@ public class ReqresTest {
 
         Assert.assertEquals(currentTimeFirstDigits, serverTimeFirstDigits);
     }
-
 
 }
