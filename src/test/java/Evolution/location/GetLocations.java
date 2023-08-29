@@ -1,7 +1,7 @@
 package Evolution.location;
 
-import API.Specifications;
-import Evolution.utils.HeaderUtils;
+import Evolution.utils.service.Specifications;
+import Evolution.utils.service.HeaderUtils;
 import Evolution.utils.pojos.locations.LocationLocation;
 import Evolution.utils.pojos.locations.LocationRoot;
 import Evolution.utils.service.Constants;
@@ -28,7 +28,7 @@ public class GetLocations {
     @Test (priority=1) // Получение списка городов
     public void GetListCities() {
 
-        API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
+        Specifications.installSpecification(Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
         // Создание заголовков с использованием HeaderUtils
         Headers headers = HeaderUtils.createHeaders(authToken);
 
@@ -44,7 +44,7 @@ public class GetLocations {
     @Test (priority = 2) // Проверка ID локации
     public void GetIdLocation() {
 
-        API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
+        Specifications.installSpecification(Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
 
         // Создание заголовков с использованием HeaderUtils
         Headers headers = HeaderUtils.createHeaders(authToken);

@@ -2,7 +2,6 @@ package Evolution.token;
 
 import Evolution.utils.service.Specifications;
 import Evolution.utils.service.Constants;
-import io.qameta.allure.restassured.AllureRestAssured;
 import io.restassured.response.ValidatableResponse;
 import org.testng.annotations.Test;
 

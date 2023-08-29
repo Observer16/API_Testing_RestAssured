@@ -1,9 +1,9 @@
 package Evolution.catalog;
 
-import API.Specifications;
+import Evolution.utils.service.Specifications;
 import Evolution.utils.service.Constants;
 import Evolution.utils.service.TokenManager;
-import Evolution.utils.HeaderUtils;
+import Evolution.utils.service.HeaderUtils;
 import io.restassured.http.Headers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.ValidatableResponse;
@@ -25,7 +25,7 @@ public class GetViewedProducts {
     @Test // Получение списка ранее просмотренных товаров
     public void Get_Viewed_Products() {
 
-        API.Specifications.installSpecification(API.Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
+        Specifications.installSpecification(Specifications.requestSpec(Constants.BASE_URL), Specifications.responseSpecUnique(200));
         // Создание заголовков с использованием HeaderUtils
         Headers headers = HeaderUtils.createHeaders(authToken);
 

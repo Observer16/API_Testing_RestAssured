@@ -175,7 +175,7 @@
                 <configuration>
                     <reportVersion>2.20.1</reportVersion>
                     <outputDirectory>${project.build.directory}/allure-report</outputDirectory>
-                    <resultsDirectory>C:/Users/obser/IdeaProjects/API_TestingRestAssured/target/allure-results</resultsDirectory>
+                    <resultsDirectory>C:/Users/obser/IdeaProjects/API_Testing_RestAssured/allure-results</resultsDirectory>
                 </configuration>
             </plugin>
 
