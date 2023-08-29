@@ -10,7 +10,7 @@ import io.restassured.http.Headers;
 import io.restassured.module.jsv.JsonSchemaValidator;
 import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
-import org.junit.Assert;
+import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import java.io.File;
